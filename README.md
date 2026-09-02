@@ -1,10 +1,10 @@
 # Basic Informational Site
 
-A minimal Node.js server built with the core `http`, `fs/promises`, and `url` modules — no frameworks. Created as part of [The Odin Project](https://www.theodinproject.com/lessons/nodejs-basic-informational-site) Node.js curriculum.
+A minimal Express.js server serving static HTML pages with route-based handling. Created as part of [The Odin Project](https://www.theodinproject.com/lessons/nodejs-basic-informational-site) Node.js curriculum.
 
 ## What it does
 
-Serves four static HTML pages based on the request URL:
+Serves four static HTML pages based on the request route:
 
 | Route          | Page             |
 |----------------|------------------|
@@ -15,6 +15,6 @@ Serves four static HTML pages based on the request URL:
 
 ## Notes
 
-- Routing is done by parsing `req.url` with the `URL` class and matching `.pathname`.
+- Built with [Express](https://expressjs.com/), using `app.get()` for each route and `res.sendFile()` to serve pages.
+- Unmatched routes are caught with `app.use()` as a fallback handler.
 - File paths are resolved with `__dirname` so the server works regardless of the directory it's run from.
-- Failed file reads return a `500` response.
