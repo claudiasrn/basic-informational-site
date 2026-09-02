@@ -1,0 +1,24 @@
+{
+  "name": "basic-informational-site",
+  "version": "1.0.0",
+  "description": "A minimal Node.js server built with the core `http`, `fs/promises`, and `url` modules — no frameworks. Created as part of [The Odin Project](https://www.theodinproject.com/lessons/nodejs-basic-informational-site) Node.js curriculum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiasrn/basic-informational-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/claudiasrn/basic-informational-site/issues"
+  },
+  "homepage": "https://github.com/claudiasrn/basic-informational-site#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
